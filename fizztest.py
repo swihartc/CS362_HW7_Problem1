@@ -21,6 +21,15 @@ class TestCase(unittest.TestCase):
         self.assertEqual(fizzbuzz.fizzbuzz(4),4)
         self.assertEqual(fizzbuzz.fizzbuzz(1),1)
         self.assertEqual(fizzbuzz.fizzbuzz(2),2)
+    def testFizzBuzz(self):
+        self.assertEqual(fizzbuzz.fizzbuzz(15),"fizzbuzz")
+        self.assertEqual(fizzbuzz.fizzbuzz(30),"fizzbuzz")
+        self.assertEqual(fizzbuzz.fizzbuzz(45),"fizzbuzz")
+        self.assertEqual(fizzbuzz.fizzbuzz(60),"fizzbuzz")
+        self.assertEqual(fizzbuzz.fizzbuzz(16),16)
+        self.assertEqual(fizzbuzz.fizzbuzz(4),4)
+        self.assertEqual(fizzbuzz.fizzbuzz(1),1)
+        self.assertEqual(fizzbuzz.fizzbuzz(2),2)
 
 if __name__ == '__main__':
     unittest.main()
