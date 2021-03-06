@@ -1,11 +1,14 @@
 
 def fizzbuzz(i):
-    pass
+    if i % 5 == 0:
+        return "fizz"
+    else: return i
 
 def main():
+
     for i in range(1,101):
-        fizzbuzz(i)
-        print(i)
+        val = fizzbuzz(i)
+        print(val)
 
 
 if __name__ == '__main__':
